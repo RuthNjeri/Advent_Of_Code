@@ -4,10 +4,10 @@ def expense_report(input)
 
 
   for expense in expenses
+    compliment = 2020 - expense
     if compliments[expense]
-      return (2020 - expense) * expense
+      return compliment * expense
     else
-      compliment = 2020 - expense
       compliments[compliment] = true
     end
   end
