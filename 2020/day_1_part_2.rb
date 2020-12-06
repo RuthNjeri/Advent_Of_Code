@@ -44,7 +44,7 @@ def expense_report_pointer(input)
         return input[higher_pointer] * input[lower_pointer] * input[outer_pointer]
       elsif two_sum > pointer_sum
         lower_pointer += 1
-      elsif two_sum < pointer_sum
+      else
         higher_pointer -= 1
       end
     end
