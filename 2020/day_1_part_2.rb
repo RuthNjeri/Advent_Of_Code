@@ -48,7 +48,7 @@ def expense_report_pointer(input)
         higher_pointer -= 1
       end
     end
-    outer_pointer += 1
+    # outer_pointer += 1
   end
 end
 
