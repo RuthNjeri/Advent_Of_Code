@@ -2,7 +2,7 @@ require 'pry'
 def valid_passwords(input)
   valid_passwords = 0
 
-  for validation in input
+  for validation in input # O(n)
     position_1 = validation[:position_1]
     position_2 = validation[:position_2]
     password = validation[:password]

@@ -2,14 +2,14 @@ require 'pry'
 def valid_passwords(input)
   valid_passwords = 0
 
-  for validation in input
+  for validation in input # O(n)
     lowest = validation[:lowest]
     highest = validation[:highest]
     password = validation[:password]
     letter = validation[:letter]
     letter_count = 0
 
-    (0..password.length - 1).map do |index|
+    (0..password.length - 1).map do |index| # O(m)
       if letter == password[index]
         letter_count += 1
       end
@@ -36,3 +36,5 @@ File.readlines('input.txt').each do |line|
 end
 
 valid_passwords(input)
+
+# 0(nm)
