@@ -61,7 +61,7 @@ end
 
 input = []
 
-File.readlines('input_1.txt').each do |line|
+File.readlines('input.txt').each do |line|
           input << line.strip.to_i
 end
 
