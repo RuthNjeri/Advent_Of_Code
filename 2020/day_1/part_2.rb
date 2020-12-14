@@ -1,6 +1,5 @@
 require 'pry'
 
-
 # Compliments work better for two sum problems
 def expense_report(input)
   expenses = input
@@ -22,16 +21,12 @@ def expense_report(input)
   end
 end
 
-
 # Pointers work better for three/four/five..sum problems
 # but you need to sort the numbers first
 
 def expense_report_pointer(input)
   input.sort!
-
-
   # outer_pointer = 0
-
   # while outer_pointer != input.length - 1
   for outer_pointer in 0..input.length - 1
     lower_pointer = outer_pointer + 1
